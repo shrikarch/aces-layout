@@ -1,0 +1,68 @@
+@color-primary : #2e0653;
+
+//import sidebar styles
+@import "./sidebar.less";
+@import "./hover_less/hover.less";
+
+.btn-theme{
+  color: #fff;
+  background: -moz-linear-gradient(45deg, rgba(240,0,186,1) 0%, rgba(255,61,149,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(240,0,186,1) 0%, rgba(255,61,149,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(240,0,186,1) 0%, rgba(255,61,149,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(240,0,186,1) 0%, rgba(255,61,149,1) 100%);
+  background: linear-gradient(45deg, rgba(240,0,186,1) 0%, rgba(255,61,149,1) 100%);
+}
+
+body{
+  background-color: @color-primary;
+  color: #fff;
+  height: 100%;
+
+  .main-container{
+    #particles-js{
+      position: relative;
+    }
+    .main-jumbotron{
+      position: absolute;
+      top: 20%;
+    }
+    .jumbotron-row{
+      height: 400px;
+      .col{
+        padding-top: 5%;
+        &.brand-heading-wrapper{
+          .brand-heading{
+            font-size: 105px;
+          }
+        }
+        &-right{
+          padding-top: 14%;
+          &.border-left{
+            border-width: 2px !important;
+          }
+        }
+      }
+    }
+
+    margin-top: 100px;
+    .alert-content{
+      margin: 0px auto;
+    }
+    .button-wrapper{
+      margin: 0px auto;
+    }
+
+
+    .events-section{
+      .each-event{
+        margin-bottom: 25px;
+      }
+    }
+
+
+  }
+
+  footer{
+    overflow-x: hidden;
+  }
+}
