@@ -4352,40 +4352,86 @@ body {
   color: #fff;
   height: 100%;
 }
-body .main-container {
+.main .main-container {
   margin-top: 100px;
 }
-body .main-container #particles-js {
+.main .main-container #particles-js {
   position: relative;
 }
-body .main-container .main-jumbotron {
+.main .main-container .main-jumbotron {
   position: absolute;
   top: 20%;
 }
-body .main-container .jumbotron-row {
+.main .main-container .jumbotron-row {
   height: 400px;
 }
-body .main-container .jumbotron-row .col {
+.main .main-container .jumbotron-row .col {
   padding-top: 5%;
 }
-body .main-container .jumbotron-row .col.brand-heading-wrapper .brand-heading {
+.main .main-container .jumbotron-row .col.brand-heading-wrapper .brand-heading {
   font-size: 105px;
 }
-body .main-container .jumbotron-row .col-right {
+.main .main-container .jumbotron-row .col-right {
   padding-top: 14%;
 }
-body .main-container .jumbotron-row .col-right.border-left {
+.main .main-container .jumbotron-row .col-right.border-left {
   border-width: 2px !important;
 }
-body .main-container .alert-content {
+.main .main-container .alert-content {
   margin: 0px auto;
 }
-body .main-container .button-wrapper {
+.main .main-container .button-wrapper {
   margin: 0px auto;
 }
-body .main-container .events-section .each-event {
-  margin-bottom: 25px;
-}
-body footer {
+.main footer {
   overflow-x: hidden;
+}
+.events hr {
+  border-color: #fff;
+}
+.events .event-content-wrapper {
+  margin-top: 100px;
+}
+.events .event-content-wrapper .card {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+}
+.events .event-content-wrapper .event-content {
+  margin-top: 60px;
+}
+.events .event-content-wrapper .event-content .event-icon {
+  font-size: 30px;
+  margin-top: -50px;
+}
+.events .event-content-wrapper .event-content .event-icon span {
+  background-color: #2e0653;
+}
+.team .navbar {
+  background-color: #2e0653;
+}
+.team hr {
+  border-color: #fff;
+}
+.team .team-content-wrapper {
+  margin-top: 100px;
+}
+.team .team-content-wrapper .team-content {
+  margin-top: 60px;
+}
+.team .team-content-wrapper .team-content .team-level:not(:first-child) {
+  margin-top: 80px;
+}
+.team .team-content-wrapper .team-content .team-level {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.team .team-content-wrapper .team-content .team-level .user-image img {
+  border: 3px solid #fff;
+}
+.team .team-content-wrapper .team-content .event-icon {
+  font-size: 30px;
+  margin-top: -50px;
+}
+.team .team-content-wrapper .team-content .event-icon span {
+  background-color: #2e0653;
 }
