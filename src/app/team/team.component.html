@@ -1,0 +1,29 @@
+<div class="team">
+  <div class="container team-content-wrapper">
+    <div class="event-heading heading">
+      <h1 class="brand-heading display-4">Our Team</h1>
+    </div>
+    <div class="team-content">
+      <div class="row team-level" *ngFor="let persons of collectionArray, let i = index">
+        <div class="col-md-3 mb-5 text-center" *ngFor="let person of persons, let j = index">
+          <div class="user-image">
+            <img src="https://i.pravatar.cc/150?img={{i+4}}{{j}}" alt="" class="rounded-circle" height="100px">
+          </div>
+
+          <div class="user-info mt-3">
+            <strong style="font-size: 20px;">{{person.name.first}} {{person.name.last}}</strong> <br>
+            <span class="capitalize">{{person.position}}</span> <br>
+            <p class="mt-3">
+              {{person.about}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>

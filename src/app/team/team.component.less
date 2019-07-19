@@ -1,0 +1,36 @@
+@import "../../variables.less";
+
+.team{
+  .capitalize{
+    text-transform: capitalize;
+  }
+  hr{
+    border-color: #fff;
+  }
+  .team-content-wrapper{
+    margin-top: 100px;
+
+    .team-content{
+      margin-top: 60px;
+      .team-level:not(:first-child){
+        margin-top: 80px;
+      }
+      .team-level{
+        margin-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        .user-image{
+          img{
+            border: 3px solid #fff;
+          }
+        }
+      }
+      .event-icon{
+        span{
+          background-color: @color-primary;
+        }
+        font-size: 30px;
+        margin-top: -50px;
+      }
+    }
+  }
+}
