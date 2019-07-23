@@ -12,6 +12,19 @@
 
 body{
   background-color: @color-primary !important;
-  color: #fff !important;
+  color: @color-secondary !important;
   height: 100% !important;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.text-semi-transparent{
+  color: fade(@color-secondary, 60%);
+  -webkit-transition: 0.2s; /* Safari prior 6.1 */
+  transition: 0.2s;
+  &:hover{
+    color: fade(@color-secondary, 100%);
+  }
 }

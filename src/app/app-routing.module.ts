@@ -12,13 +12,14 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   {
     path: 'gallery',
-    component: GalleryComponent,
-    children: [
-      {
-      path: ':eventName',
-      component: GalleryDisplayComponent
-    }]
+    component: GalleryComponent
+    // children: [
+    //   {
+    //   path: ':eventName',
+    //   component: GalleryDisplayComponent
+    // }]
   },
+  { path: 'gallery/:name', component: GalleryDisplayComponent },
   { path: 'events', component: EventsComponent },
   { path: 'timeline', component: TimelineComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },

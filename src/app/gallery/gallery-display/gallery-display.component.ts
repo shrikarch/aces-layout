@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-gallery-display',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery-display.component.less']
 })
 export class GalleryDisplayComponent implements OnInit {
-
-  constructor() { }
+  currentlyActivatedRoute;
+  constructor(private currentRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.currentRoute.params.subscribe((params) => {
+      this.currentlyActivatedRoute = params.name;
+    })
   }
 
 }
