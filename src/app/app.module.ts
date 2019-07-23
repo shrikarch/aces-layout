@@ -9,6 +9,8 @@ import { EventsComponent } from './events/events.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { TeamComponent } from './team/team.component';
 import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-display.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './home/home.component';
     EventsComponent,
     TimelineComponent,
     TeamComponent,
-    HomeComponent
+    HomeComponent,
+    GalleryComponent,
+    GalleryDisplayComponent
   ],
   imports: [
     BrowserModule,

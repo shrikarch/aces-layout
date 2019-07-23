@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-events',
-  templateUrl: './events.component.html',
-  styleUrls: ['./events.component.less']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.less']
 })
-export class EventsComponent implements OnInit {
+export class GalleryComponent implements OnInit {
   events = []
+
   constructor() { }
 
   ngOnInit() {
@@ -34,18 +35,6 @@ export class EventsComponent implements OnInit {
       {
         "name" : "DotNet Bootcamp",
         "date" : "January 25 2019"
-      },
-      {
-        "name" : "NodeJs coding bookcamp",
-        "date" : "August 05 2019"
-      },
-      {
-        "name" : "NodeJs coding bookcamp",
-        "date" : "August 05 2019"
-      },
-      {
-        "name" : "NodeJs coding bookcamp",
-        "date" : "August 05 2019"
       },
       {
         "name" : "NodeJs coding bookcamp",

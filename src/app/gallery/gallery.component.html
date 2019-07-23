@@ -1,0 +1,25 @@
+<div class="gallery">
+  <div class="container content-wrapper">
+    <div class="heading">
+      <h1 class="brand-heading display-4">Gallery</h1>
+    </div>
+    <div class="gallery-content">
+      <div class="row">
+        <div class="col-md-3 mb-4" *ngFor="let event of events; let i = index">
+          <div class="card">
+            <img src="https://picsum.photos/id/{{i + 1070}}/200/150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span>{{event.date}}</span> <br>
+              <strong>{{event.name}}</strong>
+              <div class="w-25">
+                <hr>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a class="btn btn btn-block btn-outline-light rounded-pill" [routerLink]="[event.name]">See Pictures</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

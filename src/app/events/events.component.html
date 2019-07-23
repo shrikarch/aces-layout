@@ -5,21 +5,20 @@
     </div>
     <div class="event-content">
       <div class="row">
-        <div class="col-md-3 mb-5">
+        <div class="col-md-3 mb-5" *ngFor="let event of events">
           <div class="card">
             <div class="card-body">
               <div class="event-icon text-center mb-3">
                 <span class="fa fa-fw fa-calendar-check-o"></span>
               </div>
               <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
+                <span>{{event.date}}</span> <br>
+                <strong>{{event.name}}</strong>
                 <div class="w-25">
                   <hr>
                 </div>
                 <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
+                  Kamlabai Narsee Hall
                   <br> College Name, City,
                   <br> Maharashtra
                 </h6>
@@ -30,156 +29,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="event-icon text-center mb-3">
-                <span class="fa fa-fw fa-calendar-check-o"></span>
-              </div>
-              <div class="event-details">
-                <span>August 5th, 2019</span> <br>
-                <strong>NodeJS Code Camp</strong>
-                <div class="w-25">
-                  <hr>
-                </div>
-                <h6 class="">
-                  August 5th
-                  <br> Kamlabai Narsee Hall
-                  <br> College Name, City,
-                  <br> Maharashtra
-                </h6>
-                <button class="btn btn-block btn-outline-light rounded-pill pb-2 mt-4">
-                  Register for this event
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+
 
       </div>
     </div>
