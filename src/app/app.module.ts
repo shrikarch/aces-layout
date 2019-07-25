@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +29,8 @@ import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-displ
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    NgxGalleryModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,10 +1,10 @@
 <div class="gallery-display">
   <div class="container content-wrapper">
     <div class="heading">
-      <h1 class="brand-heading display-4"><span class="text-semi-transparent pointer">Gallery </span> <span class="h2">: {{currentlyActivatedRoute}}</span></h1>
+      <h1 class="brand-heading display-4"><a class="text-semi-transparent pointer gallery-link" [routerLink]="['','gallery']">Gallery </a> <span class="h2">: {{currentlyActivatedRoute}}</span></h1>
     </div>
     <div class="gallery-display-content">
-
+      <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
     </div>
   </div>
 </div>

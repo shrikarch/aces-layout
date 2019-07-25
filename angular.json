@@ -29,9 +29,13 @@
             "styles": [
               "src/styles.less",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css"
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/assets/plugins/timeline-master/dist/css/timeline.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/plugins/timeline-master/dist/js/timeline.min.js"
+            ]
           },
           "configurations": {
             "production": {
