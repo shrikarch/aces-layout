@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { NgxGalleryModule } from 'ngx-gallery';
 
+import { EventsService } from './services/events.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -33,7 +35,9 @@ import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-displ
     NgxGalleryModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    EventsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

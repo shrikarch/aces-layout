@@ -3,69 +3,27 @@
     <div class="heading">
       <h1 class="brand-heading display-4">Timeline of Events</h1>
     </div>
-    <div class="timeline-content" style="height: 700px">
+    <div class="timeline-content">
       <div class="timeline">
         <div class="timeline__wrap">
           <div class="timeline__items">
-            <div class="timeline__item timeline__item--right fadeIn">
-              <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                <h2>2018</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                  lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div></div></div>
+            <div class="timeline__item fadeIn" *ngFor="let event of events; let index = index; let isOdd=odd; let isEven=even">
+              <div class="timeline__item__inner">
+                <div class="timeline__content__wrap">
+                  <div class="timeline__content">
+                    <h5>{{event.date}}</h5>
+                    <p>{{event.name}}</p>
+                    <div class="overlay text-center pointer">
+                      <h4 class="text" style="margin-top: 40px">See <br> Pictures</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="timeline__item animated timeline__item--left fadeIn">
-                <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                  <h2>2015</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                    lacus dapibus.</p>
-                  </div></div></div>
-                </div>
-                <div class="timeline__item animated timeline__item--right fadeIn">
-                  <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                    <h2>2014</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                      lacus dapibus.</p>
-                    </div></div></div>
-                  </div>
-                  <div class="timeline__item animated timeline__item--left fadeIn">
-                    <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                      <h2>2012</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                        lacus dapibus.</p>
-                      </div></div></div>
-                    </div>
-                    <div class="timeline__item animated timeline__item--right fadeIn">
-                      <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                        <h2>2010</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                          lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div></div></div>
-                      </div>
-                      <div class="timeline__item animated timeline__item--left fadeIn">
-                        <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                          <h2>2007</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                            lacus dapibus.</p>
-                          </div></div></div>
-                        </div>
-                        <div class="timeline__item animated timeline__item--right fadeIn">
-                          <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                            <h2>2004</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                              lacus dapibus.</p>
-                            </div></div></div>
-                          </div>
-                          <div class="timeline__item animated timeline__item--left fadeIn">
-                            <div class="timeline__item__inner"><div class="timeline__content__wrap"><div class="timeline__content">
-                              <h2>2002</h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum
-                                lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                              </div></div></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
