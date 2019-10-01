@@ -13,35 +13,35 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     this.events = [
       {
-        "name" : "NodeJs coding bookcamp",
+        "name" : "NodeJsCodingBookcamp",
         "date" : "August 05 2019"
       },
       {
-        "name" : "Matlab Bootcamp",
+        "name" : "MatlabBootcamp",
         "date" : "August 01 2019"
       },
       {
-        "name" : "ACE Meet and Greet",
+        "name" : "ACEMeetandGreet",
         "date" : "July 06 2019"
       },
       {
-        "name" : "Badminton Summer Camp",
+        "name" : "BadmintonSummerCamp",
         "date" : "April 05 2019"
       },
       {
-        "name" : "NodeJs coding bookcamp",
+        "name" : "NodeJscodingbookcamp",
         "date" : "May 25 2019"
       },
       {
-        "name" : "DotNet Bootcamp",
+        "name" : "DotNetBootcamp",
         "date" : "January 25 2019"
       },
       {
-        "name" : "NodeJs coding bookcamp",
+        "name" : "NodeJsCodingBookcamp",
         "date" : "August 05 2019"
       },
       {
-        "name" : "NodeJs coding bookcamp",
+        "name" : "NodeJsCodingBookcamp",
         "date" : "August 05 2019"
       }
     ]

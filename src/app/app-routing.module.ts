@@ -6,6 +6,7 @@ import { TeamComponent } from './team/team.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-display.component';
+import { FeedbackFormComponent } from './forms/feedback-form/feedback-form.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'gallery/:name', component: GalleryDisplayComponent },
   { path: 'events', component: EventsComponent },
   { path: 'timeline', component: TimelineComponent },
+  { path: 'forms/feedback', component: FeedbackFormComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages/page-404' }
 ];
