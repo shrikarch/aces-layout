@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topbar.component.less']
 })
 export class TopbarComponent implements OnInit {
+  navbarOpen;
 
   constructor() { }
 

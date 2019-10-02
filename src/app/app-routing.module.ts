@@ -7,10 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-display.component';
 import { FeedbackFormComponent } from './forms/feedback-form/feedback-form.component';
+import { Forms2Component } from './forms2/forms2.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'forms2', component: Forms2Component },
   {
     path: 'gallery',
     component: GalleryComponent

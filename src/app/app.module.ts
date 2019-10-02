@@ -8,6 +8,8 @@ import { NgxGalleryModule } from 'ngx-gallery';
 import { EventsService } from './services/events.service';
 
 import { AppRoutingModule } from './app-routing.module';
+import { ParticlesModule } from 'angular-particle';
+
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryDisplayComponent } from './gallery/gallery-display/gallery-display.component';
 import { FeedbackFormComponent } from './forms/feedback-form/feedback-form.component';
+import { Forms2Component } from './forms2/forms2.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +33,15 @@ import { FeedbackFormComponent } from './forms/feedback-form/feedback-form.compo
     HomeComponent,
     GalleryComponent,
     GalleryDisplayComponent,
-    FeedbackFormComponent
+    FeedbackFormComponent,
+    Forms2Component
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgxGalleryModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ParticlesModule
   ],
   providers: [
     EventsService,
